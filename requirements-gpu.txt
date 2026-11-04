@@ -1,0 +1,6 @@
+# Install only in the Kaggle/Colab environment, after removing CPU packages.
+qdrant-client>=1.20,<1.21
+fastembed-gpu>=0.9.1,<0.10
+markdown-it-py>=3,<5
+# CUDA 12.x runtime; avoid newer default CUDA 13 wheels on older notebook drivers.
+onnxruntime-gpu[cuda,cudnn]>=1.21,<1.27
